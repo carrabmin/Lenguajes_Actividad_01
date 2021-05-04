@@ -26,21 +26,18 @@
                         overflow: auto;
                     }
 
-                    /* 
-                    #contenedor>header: selector del header que sea hijo directo del id contenedor.
-                    Para evitar confusión con el header que es hijo de section (ver más abajo).     
-                    */
-
                     main>header {
                         width: 100%;
                         height: 100px;
                         background: rgb(255, 255, 255);
                         margin-bottom: 10px;
+                        color: cornflowerblue;
                         
 
                     }
 
                     img {
+                        border-radius: 20px;
                         float: left;
                     }
 
@@ -54,14 +51,16 @@
                         margin-bottom: 10px;
                     }
 
-                    /* section>header: Selector del header que sea hijo directo de la etiqueta section*/
                     section>header {
                         margin-top: 10px;
                         margin-left: 10px;
                         margin-right: 10px;
                         width: 750px;
-                        height: 100px;
+                        
                         background: #FFF;
+                        border-radius: 25px;
+                        border: 5px solid; color: rgb(0, 0, 0);
+                        
                     }
 
                     section article {
@@ -69,7 +68,7 @@
                         margin-left: 10px;
                         margin-right: 10px;
                         width: 800px;
-                        height: 700px;
+                        height: 530px;
                         background: #FFF;
                         text-align: justify;
                     }
@@ -78,23 +77,25 @@
                         margin-top: 10px;
                         margin-left: 10px;
                         margin-right: 10px;
-                        width: 380px;
+                        width: 800px;
                         height: 50px;
                         background: #FFF;
+                        text-align: justify;
                     }
 
                     aside {
                         width: 280px;
                         height: 800px;
-                        background: rgb(235, 221, 221);
+                        background: rgb(167, 168, 233);
                         float: left;
                         margin-bottom: 10px;
                         text-align: justify;
+                        border-radius: 25px;
                 
                     }
 
                     aside img {
-                        width: 280px;
+                        width: 270px;
                         height: 200px;
 
                     }
@@ -105,11 +106,12 @@
                         font-weight:bold;
                         font-style: helvetica;
                     }
+                    
                     footer {
                         clear: both;
                         width: 100%;
                         height: 100px;
-                        background: #999;
+                        background: rgb(142, 248, 151);
                         text-align: right;
                     }
 
@@ -128,38 +130,34 @@
                         color:#7d7d81;
                         padding-top: 0px;
                         padding-bottom: 0px;
-
-
                     }
 
             
-                nav ul{
-                    list-style: none;
-                    display: inline-block;
-                    padding-top: 0px;
-                    padding-bottom: 0px;
+                    nav ul{
+                        list-style: none;
+                        display: inline-block;
+                        padding-top: 0px;
+                        padding-bottom: 0px;
+                    }
+                
+                    nav ul li{
+                        float: left;
+                        margin-top: 0px;
+                    }
+                
+                    nav ul li a {
+                        color: white;
+                        font-weight: bold;
+                        text-decoration: none;
+                        font-size: 20px;
+                        padding: 18px;
+                    }
+                
+                    nav ul li a:hover{
+                    background-color: #929fb3;
+                    }
 
-                    
-                }
-            
-                nav ul li{
-                    float: left;
-                    margin-top: 0px;
-                }
-            
-                nav ul li a {
-                    color: white;
-                    font-weight: bold;
-                    text-decoration: none;
-                    font-size: 20px;
-                    padding: 18px;
-                }
-            
-                nav ul li a:hover{
-                background-color: #929fb3;
-                }
-
-                footer img {
+                    footer img {
                         width: 50px;
                         height: 50px;
                         float:right;
@@ -168,39 +166,37 @@
                         text-align:right;
                         border: 5px solid; color: rgb(0, 0, 0);
                         margin-left:30px;
-                        
-                }
+                    }
 
                     footer .enlaces_pie {
-                    float:center ;
-                    padding: 0;
-                    margin: 0;
-                    text-align:center;
-                    }
-                    footer a {
-                    color:rgb(10, 7, 170);
+                        float:center ;
+                        padding: 0;
+                        margin: 0;
+                        text-align:center;
                     }
 
-    
+                    footer a {
+                        color:rgb(10, 7, 170);
+                    }
         </style>
 
     </head>
     <body>
         <main>
             <header>
-                    <img src="img_HOME/logo.jpg" alt="El centollo">
-                    <img src="img_HOME/amanecer.jpg" width="600" height="100" />
-
-                    <h3> Teléfono: 900500600 </h3>
-                    <h3> email: helpafrica@ong.com </h3>
+                    <img src="img_HOME/logo.jpg" alt="logo">
+                    <img style="border: 5px solid; color: rgb(202, 216, 8)" src="img_HOME/amanecer.jpg" width="600" height="100" />
+            </br>
+                    <h3 style="font-family: Verdana, Geneva, Tahoma, sans-serif,"> Teléfono: 900500600 </h3>
+                    <h3 style="font-style: italic"> helpafrica@ong.com </h3>
 
 
              </header>
                 <nav>
                     <ul>
-                      <li><a href="#">HOME</a></li>
+                      <li><a href="../01_HOME/HOME.html">HOME</a></li>
                       <li><a href="#">Noticias</a></li>
-                      <li><a href="#">Quiénes somos</a></li>
+                      <li><a href="../Quienes_somos/Quienes_somos.html">Quiénes somos</a></li>
                       <li><a href="#">Publicaciones</a></li>
                       <li><a href="../AreasActuacion/Areas.html">Áreas de actuación</a></li>
                       <li><a href="#">Localización</a></li>
@@ -211,7 +207,7 @@
     
             <section>
     
-                <header>
+                <header style= "background-color: rgb(109, 157, 206)">
                     <h1>
                         AYÚDANOS A VACUNAR EN ÁFRICA
                     </br>
@@ -221,23 +217,33 @@
                  </header>
     
                 <article>
-                    <img id="vacunaAfrica" src="img_HOME/Vacunacion.png" alt="Niño" width="800" height="400" title="Procedimiento de vacunación" />
+                    <img style="border: 5px solid; color: rgb(7, 4, 24)" id="vacunaAfrica" src="img_HOME/Vacunacion.png" alt="Niño" width="800" height="400" title="Procedimiento de vacunación" />
         
                     <p>
-                        El mundo se halla inmerso en la pandemia de COVID-19. La OMS y sus asociados trabajan juntos en la respuesta siguiendo el rastro de la pandemia, ofreciendo asesoramiento sobre las intervenciones más importantes, distribuyendo suministros médicos esenciales a los más necesitados y se han lanzado a la carrera por encontrar una vacuna.
-
-                        Las vacunas salvan cada año millones de vidas. Su función es entrenar y preparar a las defensas naturales del organismo el sistema inmunológico para detectar y combatir a los virus y las bacterias seleccionados. Si el cuerpo se ve posteriormente expuesto a estos gérmenes patógenos, estará listo para destruirlos de inmediato, previniendo así la enfermedad.                    
+                        El mundo se halla inmerso en la pandemia de COVID-19. La OMS y sus asociados trabajan juntos en la respuesta siguiendo el rastro de la pandemia,
+                         ofreciendo asesoramiento sobre las intervenciones más importantes, distribuyendo suministros médicos esenciales a los más necesitados y se han 
+                         lanzado a la carrera por encontrar una vacuna. Las vacunas salvan cada año millones de vidas. Su función es entrenar y preparar a las defensas 
+                         naturales del organismo el sistema inmunológico para detectar y combatir a los virus y las bacterias seleccionados. 
+                         Si el cuerpo se ve posteriormente expuesto a estos gérmenes patógenos, estará listo para destruirlos de inmediato, previniendo así la enfermedad.                    
                     </p>             
                 </article>
                 <footer>
-    
+                        <h2 style="color: blue;">Si usted viaja no deje de leer esta información</h2>   
+                    <p>
+                        Viajar es una actividad cada vez más integrada en la vida de todos nosotros. Sea cual sea la razón de nuestro viaje, debemos tomar ciertas medidas preventivas para preservar nuestra salud. Existen múltiples vacunas recomendadas para los viajeros, que serán indicadas según los diferentes destinos, así como la profilaxis para la malaria (medicación preventiva de la enfermedad), sin olvidar las recomendaciones generales (higiene de alimentos y bebidas, prevención de las picaduras de mosquito, botiquín, etc.) que se deben seguir para evitar la exposición a ciertas enfermedades.
+
+                        Con este buscador interactivo podrá encontrar información relevante sobre los grados de recomendación de vacunas para el viajero. En todo caso la prescripción de vacunas es individualizada y depende de diversos factores del viajero así como del viaje o la época del año en que se realice. Haciendo uso de nuestro buscador podrá encontrar información sobre las siguientes vacunas: Fiebre amarilla, Hepatitis A, Tétanos-difteria, Poliomielitis, Meningocócica, Cólera, Fiebre tifoidea, Hepatitis B, Rabia, Gripe, Neumocócica, Triple Vírica.
+
+                        Para la prescripción de vacunas consulte con su médico o Centro de vacunación especializado.
+                    </p>
+                
                 </footer>
     
             </section>
     
             <aside>
                 <div>
-                    <img id="voluntario" src="img_HOME/Voluntario.jpg" alt="voluntarioEjemplar">
+                    <img style="border: 5px solid; color: rgb(5, 1, 29)" id="voluntario" src="img_HOME/Voluntario.jpg" alt="voluntarioEjemplar">
                     <h3>De voluntario en África a las altas esferas de la Organización Mundial de la Salud</h2>
                     <p>
                         Un viaje a Ghana prendió la mecha, y el espíritu luchador de los activistas contra el VIH le acabó de inspirar.
@@ -246,29 +252,27 @@
                     </p>
                 </div>
                 <div>
-                    <img id="covax" src="img_HOME/COVAX.jpeg" alt="vacunaAfrica">
-                <h3>
-                    Las vacunas contra la covid han llegado a 38 países de África                </h2>
-                <P>
-                    Se han administrado casi siete millones de dosis, una cifra muy baja en comparación
-                     con la población del continente, que asciende a unos 1.300 millones de personas
+                        <img style="border: 5px solid; color: rgb(10, 5, 37)" id="covax" src="img_HOME/COVAX.jpeg" alt="vacunaAfrica">
+                    <h3>
+                        Las vacunas contra la covid han llegado a 38 países de África                </h2>
+                    <P>
+                        Se han administrado casi siete millones de dosis, una cifra muy baja en comparación
+                        con la población del continente, que asciende a unos 1.300 millones de personas
 
-                </P>
-            </div>
+                    </P>
+                </div>
             </aside>
     
             <footer>
                 <p class="enlaces_pie">
-                    <a title="Ir al inicio" href="#">Inicio</a> // <a title="contacto" href="#">Contacto</a> // <a title="Aviso legal" href="#">Aviso legal</a>
+                    <a title="Ir al inicio" href="../01_HOME/HOME.html">Inicio</a> // <a title="contacto" href="#">Contacto</a> // <a title="Aviso legal" href="#">Aviso legal</a>
                 </p>
 
                 <a href="#"><img id="facebook" src="img_HOME/facebook.png" alt="logoFacebook"></a>
                 <a href="#"><img id="twitter" src="img_HOME/twitter.png" alt="logoFacebook"></a>
                 <a href="#"><img id="instagram" src="img_HOME/instagram.png" alt="logoFacebook"></a>
-             
 
- 
             </footer>        
         </main>
     </body>
-    </html>
+</html>
