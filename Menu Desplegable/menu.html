@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS HTML5</title>
+    <!--
+        HTML5
+        -----
+
+        Ejemplo de como poder crear estilos CSS en una página web con las etiquetas semanticas
+        de HTML5
+
+    -->
+        <style>
+       
+                *{margin:0;padding:0;box-sizing:border-box;font-size:0;}  
+            nav a{
+                text-decoration:none;
+                color:inherit;
+                font-size:14px;
+                }
+                        
+            nav li{
+                display:inline-block;
+                width:150px;
+                height:30px;
+                padding:5px 10px;
+                background-color:#000;
+                border:1px solid #000;
+                text-align:center;
+                color:#fff;
+                position:relative;
+            }
+                        
+            nav li:hover{
+                background-color:#fff;
+                color:#000;
+                }
+                        
+            nav li>ul{
+                display:none;
+                }
+
+            nav li:hover>ul{
+                display:block;
+                position:absolute;
+                top:30px;
+                left:0px;
+            }
+        </style>
+</head>
+
+<body>
+    <main>
+        <header>
+
+        </header>
+
+        <nav>
+            <ul>
+             
+                <li><a href="#">Menu desplegable</a>
+                    <ul>
+                    <li><a href="../01_HOME/HOME.html">HOME</a></li>
+                    <li><a href="">Noticias</a></li>
+                    <li><a href="../Quienes_somos/Quienes_somos.html">Quienes somos</li></a>
+                    <li><a href="">Publicaciones</li></a>
+                    <li><a href="../04_FORMULARIO/formulario.html">Localización</li></a>
+                    <li><a href="../AreasActuacion/Areas.html">Áreas de actuación</li></a>
+                    <li><a href="">Contacto</li></a></ul>
+                <li><a href="../01_HOME/HOME.html">HOME</a></li>
+                <li><a href="#">Noticias</a></li>
+                <li><a href="../Quienes_somos/Quienes_somos.html">Quienes somos</a></li>
+                <li><a href="#">Publicaciones</a></li>
+                <li><a href="#">Localización</a></li>
+                <li><a href="../AreasActuacion/Areas.html">Áreas de actuación</a></li>
+                <li><a href="../04_FORMULARIO/formulario.html">Contacto</a></li>
+
+
+
+            </ul>
+        </nav>
+
+        <section>
+
+            <header>
+
+            </header>
+
+            <article>
+
+            </article>
+
+            <footer>
+
+            </footer>
+
+        </section>
+
+        <aside>
+
+        </aside>
+
+        <footer>
+
+        </footer>        
+    </main>
+</body>
+</html>
