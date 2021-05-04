@@ -1,12 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- la etiqueta meta charset destinado a indicar la codificación de caracteres utilizada -->
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=>, initial-scale=1.0">
-    <title>Document</title>
 
+    <!-- esta etiqueta meta se relaciona mayormente con el navegador-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!--la siguiente etiquela meta representa el área visible del navegador, es importante
+    para poder usar nuestra página en distintos dispositivos y pantallas -->
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+
+    <title>Document</title>
+    
+    <!-- Introduzco css mediante una etiqueta style-->
     <style>
+        /* con el selector nav, voy dando formato al navegador*/
          nav a {
             text-decoration: none;
             color: inherit;
@@ -42,10 +51,12 @@
             left: 0px;
         }
 
-    
+        /*uso una imágen de fondo*/
         body{
             background-image: url("imagenes/VacunasInternacionales.jpg");
         }
+
+
         #publicidad {
             color: rgb(119, 12, 12);
             top: 5em;
@@ -54,6 +65,7 @@
             height: 5%;
         }
 
+        /*doy forma a la flecha para que se vea y el usuario pueda usar su servicio*/
         #flecha{
             width: 5%;
             height: 9%;
@@ -61,6 +73,7 @@
             color: rgb(240, 240, 247);
             
         }
+
         .publicidad{
             opacity:0.8;
             filter:alpha(opacity=40); 
@@ -108,8 +121,6 @@
             background-color: rgb(245, 234, 245);
         }
 
-       
-
         footer{
            clear:both;
            width: 100%;
@@ -118,6 +129,7 @@
            color:rgb(243, 32, 24);
           
         }
+
         /*adaptación para iPad y iPhone 5, ambos en verttical*/
         @media screen and (min-width:768px) and (min-width:640px) and (orientation: portrait){
             header{
@@ -129,6 +141,7 @@
                 height: 200px;
             }
         }
+
         /*adaptación para iPad y iPhone 5, ambos en horizontal*/
         @media screen and (min-width:1024px) and (min-width:1136px) and (orientation: landscape) {
             header{
@@ -149,11 +162,13 @@
       
     <p id="volverPrincipio"></p>
     
-    
+    <!-- meto la cabecera -->
     <header>
         <h1 style= "color:darkgreen">ÁREAS DE ACTUACIÓN</h1>
      
     </header>
+
+    <!-- meto el navegador -->
     <nav style= "font-weight: bold;">
         <ul>
             <li><a href="../01_HOME/HOME.html">Home</a></li>
@@ -161,6 +176,9 @@
             <li><a href="../Quienes_somos/Quienes_somos.html">Quienes somos</a></li>
             <li>Publicaciones</li>
             <li><a href="../AreasActuacion/Areas.html">Área de actuación</a>
+
+            <!-- quería aportar una imágen en cada área de actuación para que personas que no saben leer 
+            puedan ver una imágen-->
                 <ul>
                     <li><a href="imagenes/ApoyoInfancia.jpg" style="color: teal;">Proyecto de apoyo a la infacia y a lal educación</a></li>
                     <li><a href="imagenes/AyudaHumanitaria.jpg" style="color: rgb(18, 57, 184);">Ayuda humanitaria</a></li>
@@ -178,7 +196,8 @@
 </br>
     <h2 >PROGRAMAS INTERNACIONALES</h2>
 
-   
+    <!-- meto la sección con sus artículos. Cada artículo consta de un párrafo ficticio generado con 
+    un generador de textos. Concretamente https://www.chiquitoipsum.com/-->
     <selection>
 
         <article>
@@ -269,6 +288,7 @@
 
     </selection>
 
+    <!-- meto la publicidad-->
         <aside>
             <div>
                 <img class="publicidad" src="imagenes/publicidad.jpg" title="esto es un mercedes" alt= "Mercedes"/> 
@@ -276,13 +296,14 @@
             </div>
         </aside>
 
-        </br>
+        </br> 
 
+    <!--añado un enlace para que me devuelva al principio de la página-->
         <div style="text-align: right" >
             <a id="flecha" href="#volverPrincipio">&#8657</a>
         </div>
         
-
+    <!-- meto el pie de página-->
         <footer>
             <p>Fuentes de Elena Santos Molina </p>
             <p>reservados derechos de autor  copyright 2021 &copysr;</p>
