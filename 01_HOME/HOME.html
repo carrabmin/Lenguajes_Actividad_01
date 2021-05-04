@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ONG VACUNAS</title>
+  
+        <style>
+                      
+                    h1 {
+                        font-family: 'Pacifico', cursive;
+                        color: rgb(10, 7, 170);
+                        line-height: 40px;
+                        font-size: 30px;
+                        text-align: center;
+
+                    }
+
+                    main {
+                        margin-left: auto;
+                        margin-right: auto;
+                        width: 1200px;
+                        margin-bottom: 0px;
+                        padding: 10px;
+                        border: 1px solid #006;
+                        overflow: auto;
+                    }
+
+                    /* 
+                    #contenedor>header: selector del header que sea hijo directo del id contenedor.
+                    Para evitar confusión con el header que es hijo de section (ver más abajo).     
+                    */
+
+                    main>header {
+                        width: 100%;
+                        height: 100px;
+                        background: rgb(255, 255, 255);
+                        margin-bottom: 10px;
+                        
+
+                    }
+
+                    img {
+                        float: left;
+                    }
+
+                    section {
+                        margin-right: 5px;
+                        width: 900px;
+                        height:950px;
+                        background: rgb(255, 255, 255);
+                        float:left;
+                        overflow: auto;
+                        margin-bottom: 10px;
+                    }
+
+                    /* section>header: Selector del header que sea hijo directo de la etiqueta section*/
+                    section>header {
+                        margin-top: 10px;
+                        margin-left: 10px;
+                        margin-right: 10px;
+                        width: 750px;
+                        height: 100px;
+                        background: #FFF;
+                    }
+
+                    section article {
+                        margin-top: 10px;
+                        margin-left: 10px;
+                        margin-right: 10px;
+                        width: 800px;
+                        height: 700px;
+                        background: #FFF;
+                        text-align: justify;
+                    }
+
+                    section footer {
+                        margin-top: 10px;
+                        margin-left: 10px;
+                        margin-right: 10px;
+                        width: 380px;
+                        height: 50px;
+                        background: #FFF;
+                    }
+
+                    aside {
+                        width: 280px;
+                        height: 800px;
+                        background: rgb(235, 221, 221);
+                        float: left;
+                        margin-bottom: 10px;
+                        text-align: justify;
+                
+                    }
+
+                    aside img {
+                        width: 280px;
+                        height: 200px;
+
+                    }
+
+                    aside p {
+                        font-size:13px;
+                        font-family:Arial, Helvetica, sans-serif;
+                        font-weight:bold;
+                        font-style: helvetica;
+                    }
+                    footer {
+                        clear: both;
+                        width: 100%;
+                        height: 100px;
+                        background: #999;
+                        text-align: right;
+                    }
+
+                    ul {
+                        list-style-type: none;
+                        margin: 0;
+                        overflow: hidden;
+                        background-color: rgb(0, 0, 0);
+                        text-align: left;
+                        padding-top: 5px;
+                        padding-bottom: 5px;
+
+                    }
+
+                    nav {
+                        color:#7d7d81;
+                        padding-top: 0px;
+                        padding-bottom: 0px;
+
+
+                    }
+
+            
+                nav ul{
+                    list-style: none;
+                    display: inline-block;
+                    padding-top: 0px;
+                    padding-bottom: 0px;
+
+                    
+                }
+            
+                nav ul li{
+                    float: left;
+                    margin-top: 0px;
+                }
+            
+                nav ul li a {
+                    color: white;
+                    font-weight: bold;
+                    text-decoration: none;
+                    font-size: 20px;
+                    padding: 18px;
+                }
+            
+                nav ul li a:hover{
+                background-color: #929fb3;
+                }
+
+                footer img {
+                        width: 50px;
+                        height: 50px;
+                        float:right;
+                        padding: 0;
+                        margin: 0;
+                        text-align:right;
+                        border: 5px solid; color: rgb(0, 0, 0);
+                        margin-left:30px;
+                        
+                }
+
+                    footer .enlaces_pie {
+                    float:center ;
+                    padding: 0;
+                    margin: 0;
+                    text-align:center;
+                    }
+                    footer a {
+                    color:rgb(10, 7, 170);
+                    }
+
+    
+        </style>
+
+    </head>
+    <body>
+        <main>
+            <header>
+                    <img src="img/logo.jpg" alt="El centollo">
+                    <img src="img/amanecer.jpg" width="600" height="100" />
+
+                    <h3> Teléfono: 900500600 </h3>
+                    <h3> email: helpafrica@ong.com </h3>
+
+
+             </header>
+                <nav>
+                    <ul>
+                      <li><a href="#">HOME</a></li>
+                      <li><a href="#">Noticias</a></li>
+                      <li><a href="#">Quiénes somos</a></li>
+                      <li><a href="#">Publicaciones</a></li>
+                      <li><a href="#">Áreas de actuación</a></li>
+                      <li><a href="#">Localización</a></li>
+                      <li><a href="#">Contacto</a></li>
+                    </ul>
+                  </nav>
+        
+    
+            <section>
+    
+                <header>
+                    <h1>
+                        AYÚDANOS A VACUNAR EN ÁFRICA
+                    </br>
+                        TU PEQUEÑA APORTACIÓN SALVARÁ VIDAS
+                    </h1>
+                    
+                 </header>
+    
+                <article>
+                    <img id="vacunaAfrica" src="img/Vacunacion.png" alt="Niño" width="800" height="400" title="Procedimiento de vacunación" />
+        
+                    <p>
+                        El mundo se halla inmerso en la pandemia de COVID-19. La OMS y sus asociados trabajan juntos en la respuesta siguiendo el rastro de la pandemia, ofreciendo asesoramiento sobre las intervenciones más importantes, distribuyendo suministros médicos esenciales a los más necesitados y se han lanzado a la carrera por encontrar una vacuna.
+
+                        Las vacunas salvan cada año millones de vidas. Su función es entrenar y preparar a las defensas naturales del organismo el sistema inmunológico para detectar y combatir a los virus y las bacterias seleccionados. Si el cuerpo se ve posteriormente expuesto a estos gérmenes patógenos, estará listo para destruirlos de inmediato, previniendo así la enfermedad.                    
+                    </p>             
+                </article>
+                <footer>
+    
+                </footer>
+    
+            </section>
+    
+            <aside>
+                <div>
+                    <img id="voluntario" src="img/Voluntario.jfif" alt="voluntarioEjemplar">
+                    <h3>De voluntario en África a las altas esferas de la Organización Mundial de la Salud</h2>
+                    <p>
+                        Un viaje a Ghana prendió la mecha, y el espíritu luchador de los activistas contra el VIH le acabó de inspirar.
+                        Tras dos décadas dedicado a combatir el sida, Anil Soni ha sido nombrado CEO de la Fundación de la OMS.
+                        Quiere eliminar las inequidades y mejorar el acceso a las vacunas y a la atención primaria 
+                    </p>
+                </div>
+                <div>
+                    <img id="covax" src="img/COVAX.jpeg" alt="vacunaAfrica">
+                <h3>
+                    Las vacunas contra la covid han llegado a 38 países de África                </h2>
+                <P>
+                    Se han administrado casi siete millones de dosis, una cifra muy baja en comparación
+                     con la población del continente, que asciende a unos 1.300 millones de personas
+
+                </P>
+            </div>
+            </aside>
+    
+            <footer>
+                <p class="enlaces_pie">
+                    <a title="Ir al inicio" href="#">Inicio</a> // <a title="contacto" href="#">Contacto</a> // <a title="Aviso legal" href="#">Aviso legal</a>
+                </p>
+
+                <a href="#"><img id="facebook" src="img/facebook.jfif" alt="logoFacebook"></a>
+                <a href="#"><img id="twitter" src="img/twitter.png" alt="logoFacebook"></a>
+                <a href="#"><img id="instagram" src="img/instagram.jfif" alt="logoFacebook"></a>
+             
+
+ 
+            </footer>        
+        </main>
+    </body>
+    </html>
