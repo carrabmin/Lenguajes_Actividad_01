@@ -7,6 +7,42 @@
     <title>Document</title>
 
     <style>
+         nav a {
+            text-decoration: none;
+            color: inherit;
+            font-size: 14px;
+        }
+
+        nav li {
+            border-radius: 10px;
+            display: inline-block;
+            width: 150px;
+            height: 30px;
+            padding: 5px 10px;
+            background-color: rgb(248, 198, 248);
+            border: 1px solid #000;
+            text-align: center;
+            color: rgb(8, 8, 8);
+            position: relative;
+        }
+
+        nav li:hover {
+            background-color: #fff;
+            color: #000;
+        }
+
+        nav li>ul {
+            display: none;
+        }
+
+        nav li:hover>ul {
+            display: block;
+            position: absolute;
+            top: 30px;
+            left: 0px;
+        }
+
+    
         body{
             background-image: url("imagenes/VacunasInternacionales.jpg");
         }
@@ -54,8 +90,6 @@
             padding: 50px;
             margin: 80px;
             border-radius: 25px;
-            
-            
             width: auto;
             height: auto;
             
@@ -69,13 +103,20 @@
             background-color: rgb(224, 220, 220);
         }
 
-        h3{
+        h3 {
             text-decoration: underline;
+            background-color: rgb(245, 234, 245);
         }
 
+       
+
         footer{
-            text-align: right;
-            color:firebrick;
+           clear:both;
+           width: 100%;
+           height: auto;
+           text-align: right;
+           color:rgb(243, 32, 24);
+          
         }
 
         @media screen and (max-width:1000px) {
@@ -109,13 +150,37 @@
       
     <p id="volverPrincipio"></p>
     
+    
     <header>
         <h1 style= "color:darkgreen">ÁREAS DE ACTUACIÓN</h1>
+     
     </header>
+    <nav style= "font-weight: bold;">
+        <ul>
+            <li><a href="../01_HOME/HOME.html">Home</a></li>
+            <li>Noticias</li>
+            <li><a href="../Quienes_somos/Quienes_somos.html">Quienes somos</a></li>
+            <li>Publicaciones</li>
+            <li><a href="../AreasActuacion/Areas.html">Área de actuación</a>
+                <ul>
+                    <li><a href="imagenes/ApoyoInfancia.jpg" style="color: teal;">Proyecto de apoyo a la infacia y a lal educación</a></li>
+                    <li><a href="imagenes/AyudaHumanitaria.jpg" style="color: rgb(18, 57, 184);">Ayuda humanitaria</a></li>
+                    <li><a href="imagenes/VacunasInternacionales.jpg" style="color: rgb(98, 170, 39);">Vacunación internacional</a></li>
+                    <li><a href="imagenes/DerechosMujer.jpg" style="color: rgb(219, 4, 155);">Defensa de los derechos y la dignidad de la mujer</a></li>
+                    <li><a href="imagenes/ProteccionAmbiente.jpg" style="color: rgb(30, 243, 161);">Protección del medio ambiente</a></li>
+                    <li><a href="imagenes/ComercioJusto.jpg" style="color: rgb(124, 5, 15);">Comercio justo</a></li>
+                    
+                </ul>
+            </li>
+            <li>Localización</li>
+            <li><a href="../04_FORMULARIO/formulario.html">Contacto</a></li>
+        </ul>
+    </nav>
+</br>
+    <h2 >PROGRAMAS INTERNACIONALES</h2>
 
+   
     <selection>
-
-        <h2 >PROGRAMAS INTERNACIONALES</h2>
 
         <article>
             <h3>PROYECTO DE APOYO A LA INFACIA Y A LA EDUCACIÓN</h3>
@@ -223,6 +288,7 @@
             <p>Fuentes de Elena Santos Molina </p>
             <p>reservados derechos de autor  copyright 2021 &copysr;</p>
         </footer>
+
     </main> 
 </body>
 </html>
