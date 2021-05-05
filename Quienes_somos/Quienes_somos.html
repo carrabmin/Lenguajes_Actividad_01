@@ -2,13 +2,39 @@
 <html>
 
 <head>
-
+<!--
+    En head, añado UTF-8 para añadir los simbolos que voy a usar, la linea 10 "X-UA-Compatible" sirve para la compatibilidad con microsoft edge
+    y con la línea 11 añadimos @media para dar distintos formatos a la pagina segun el terminal usado o para varias resoluciones.
+-->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<!--
+    Creo una etiqueta "style" con su tipo CSS para la creación del codigo CSS y añado los media. (No he conseguido aplicarlos)
+    Doy forma a cada sector, a cada elemento y a cada contenido según lo necesitado.
+-->   
     <style type="text/css">
+
+    @media screen and (max-width: 1300) {}
+    @media (min-width: 900) and (max-width: 1300) {}
+    @media screen and (orientation: portrait) and (max-width: 778) {}
+    @media screen and (orientation: landscape) and (max-width: 1136) {}
+    @media screen and (orientation: portrait) and (max-width: 640) {}
+    @media screen and (orientation: landscape) and (max-width: 1024) {}
+
         #rrss {
             float: right;
+        }
+
+        h1{
+            color: rgb(255, 255, 255);
+            border-radius: 25px;
+            padding: 10px;
+            background-color: rgb(78, 78, 78);
+        }
+        h3, p {
+            color:black
         }
 
         nav a {
@@ -45,14 +71,54 @@
             left: 0px;
         }
 
+ 
+        section>header {
+            margin-top: 10px;
+            margin-left: 10px;
+            margin-right: 10px;
+            width: 380px;
+            height: 100px;
+            background: rgb(255, 255, 255);
+        }
 
-        h2,
-        h3,
-        p {
-            color: black;
-            background-color: gray;
+        section article {
+            margin-top: 20px;
+            margin-left: 350px;
+            margin-right: 20px;
+            width: 1000px;
+            height: 500px;
+            background: gray;
+        }
+
+        section footer {
+            margin-top: 10px;
+            margin-left: 10px;
+            margin-right: 10px;
+            width: 380px;
+            height: 50px;
+            background: #FFF;
+        }
+
+        aside {
+            width: 280px;
+            height: 265px;
+            background: rgb(255, 255, 255);
+            float: left;
+            margin-bottom: 10px;
+            margin-left: 100px;
+        }
+
+        footer {
+            clear: both;
+            width: 100%;
+            height: 55px;
+            background: #999;
         }
     </style>
+
+<!--
+    Añado dos imagenes a la cabecera.
+-->  
 
     <header>
 
@@ -65,26 +131,25 @@
     </header>
 </head>
 
+<!--
+    En body o cuerpo de la página, añado la navegación (solo la he añadido con las paginas que tienen funciones, se podría añadir más creando sus
+    correspondientes archivos HTML y CSS. 
+    También agrego información sobre Quienes somos con tres imagenes correspondientes a su categoría.)
+-->  
+
 <body>
 
     <nav>
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Quienes somos</a></li>
-            <li><a href="#">Área de actuación</a>
-                <ul>
-                    <li><a href="">Servicio 1</a></li>
-                    <li><a href="">Servicio 2</a></li>
-                    <li><a href="">Servicio 3</a></li>
-                    <li><a href=""></a>Servicio 4</li>
-                </ul>
-            </li>
-            <li><a href="#">Contacto</a></li>
+            <li><a href="../01_HOME/HOME.html">Home</a></li>
+            <li><a href="../Quienes_somos/Quienes_somos.html">Quienes somos</a></li>
+            <li><a href="../AreasActuacion/Areas.html">Área de actuación</a></li>
+            <li><a href="../04_FORMULARIO/Formulario CSS.html">Contacto</a></li>
         </ul>
     </nav>
 
     <section>
-        <h2> ¿Quienes somos? <h2>
+        <h1> ¿Quienes somos? <h1>
                 <br />
                 <article>
                     <img id="QuienSomos" src="https://blog.gosocket.net/wp-content/uploads/2015/09/donate.png"
@@ -98,13 +163,16 @@
                         país, que han realizado 14.830.146 atenciones y han contado con la colaboración de 3.503.726
                         personas socias, 410.994 personas voluntarias y 105.894 trabajadores y trabajadoras. </p>
                 </article>
-                <br />
+                <br/>
+                <br/>
                 <article>
                     <h3> Misión </h3>
                     <p> La Plataforma de ONG es una organización cuya misión consiste en defender los derechos de los
                         grupos y personas más desfavorecidos, promover la participación en el ámbito de la Acción
                         Social, generar cambio social, representar a sus organizaciones ante los poderes públicos y
                         liderar a éstas en torno a un proyecto compartido. </p>
+                        <img id="misionImage" src="https://lh3.googleusercontent.com/proxy/CStHH9x71toOnvdj7M9zhZeaCVdsWIq1WF6UB_C5FjAiNqgGZP2J26_Hv6yLtiW39zAUwqjVwHpWIPYg0s448eDDjqgO1RafVvQ7R0IKpINsjiM"
+                        title="foto5" style="text-align: right;" >
                 </article>
                 <br />
                 <article>
@@ -114,13 +182,29 @@
                         multiplique los efectos positivos de la acción social gracias a que hemos alcanzado el estatus
                         de Agente Social, somos un referente e interlocutor reconocido ante la sociedad civil, ante las
                         Administraciones Públicas y ante las propias ONGs. </p>
+                        
+                        <img id="visionImage" src="https://uploads-ssl.webflow.com/575edfeea4bf5b9f21de5618/604a7cb572a0c044474e503d_EGA%20Futura%20Recruit%20256.png"
+                        title="foto6" style="text-align: right;" >
+
                 </article>
     </section>
+
+    <!--
+    Creo un aside con una barra de anuncio que es una foto insertada.
+-->  
 
     <aside>
         <img id="cocacola" src="https://www.morrikos.com.mx/wp-content/uploads/2019/06/banner-coca-cola-2.jpg"
             title="foto4" />
     </aside>
 
+    <!--
+    Finalizo con el pié de página o footer en el que añado dos contenidos de texto.
+-->  
+
     <footer>
-        <p> 2021 Todos los derechos reservados &copy; ONG </p>
+        <div style="text-align: end;">
+            <p> 2021 Todos los derechos reservados &copy; ONG </p>
+            <p> Juan Carlos Vázquez Escarcena </p>
+        </div>
+     
