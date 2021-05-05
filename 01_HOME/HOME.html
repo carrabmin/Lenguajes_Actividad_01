@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <!-- Codificación de caracteres -->
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=>, initial-scale=1.0">
+        
         <title>ONG VACUNAS</title>
   
-        <style>
-                      
+    <!-- Introduzco stilos de CSS mediante una etiqueta style-->
+        <style type="text/css">
+        
+                /* Estilo de la etiqueta h1 */  
                     h1 {
                         font-family: 'Pacifico', cursive;
                         color: rgb(10, 7, 170);
@@ -15,7 +20,8 @@
                         text-align: center;
 
                     }
-
+                
+                /* Estilo principal - Configuro dimensiones y caracteríticas */
                     main {
                         margin-left: auto;
                         margin-right: auto;
@@ -25,7 +31,8 @@
                         border: 1px solid #006;
                         overflow: auto;
                     }
-
+                
+                /* Estilo de la cabecera principal - Configuro dimensiones y caracteríticas */
                     main>header {
                         width: 100%;
                         height: 100px;
@@ -35,12 +42,13 @@
                         
 
                     }
-
+                /* Estilo global/genérico de las fotos */
                     img {
                         border-radius: 20px;
                         float: left;
                     }
 
+                /* Estilo de la estructura section - Configuro dimensiones y caracteríticas */
                     section {
                         margin-right: 5px;
                         width: 900px;
@@ -51,6 +59,7 @@
                         margin-bottom: 10px;
                     }
 
+                /* Estilo de la sección header de la estructura section - Configuro dimensiones y caracteríticas */
                     section>header {
                         margin-top: 10px;
                         margin-left: 10px;
@@ -63,6 +72,7 @@
                         
                     }
 
+                /* Estilo de la sección article de la estructura section - Configuro dimensiones y caracteríticas */
                     section article {
                         margin-top: 10px;
                         margin-left: 10px;
@@ -73,6 +83,7 @@
                         text-align: justify;
                     }
 
+                /* Estilo de la sección footer de la estructura section - Configuro dimensiones y caracteríticas */
                     section footer {
                         margin-top: 10px;
                         margin-left: 10px;
@@ -83,6 +94,7 @@
                         text-align: justify;
                     }
 
+                /* Estilo de la sección aside de la estructura section - Configuro dimensiones y caracteríticas */
                     aside {
                         width: 280px;
                         height: 800px;
@@ -93,13 +105,15 @@
                         border-radius: 25px;
                 
                     }
-
+                
+                /* Estilo de las imágenes de la sección aside - Configuro dimensiones */
                     aside img {
                         width: 270px;
                         height: 200px;
 
                     }
 
+                /* Estilo de la letra de los párrafos de la sección aside */
                     aside p {
                         font-size:13px;
                         font-family:Arial, Helvetica, sans-serif;
@@ -107,6 +121,7 @@
                         font-style: helvetica;
                     }
                     
+                /* Estilo de la sección footer - Configuro dimensiones y caracteríticas */
                     footer {
                         clear: both;
                         width: 100%;
@@ -126,6 +141,7 @@
 
                     }
 
+                /* Estilos de la sección nav y sus etiquetas */
                     nav {
                         color:#7d7d81;
                         padding-top: 0px;
@@ -157,6 +173,7 @@
                     background-color: #929fb3;
                     }
 
+                /* Estilo de la imágenes contenidas en la sección footer */
                     footer img {
                         width: 50px;
                         height: 50px;
@@ -168,6 +185,7 @@
                         margin-left:30px;
                     }
 
+                /* Estilo de los enlaces al pie contenidos en el footer */    
                     footer .enlaces_pie {
                         float:center ;
                         padding: 0;
@@ -175,48 +193,69 @@
                         text-align:center;
                     }
 
-                    footer a {
-                        color:rgb(10, 7, 170);
+            /* DISEÑO RESPONSIVO - MEDIA QUERIES */               
+                
+                /* Adaptación para ancho variable de monitores de más de 1300px de ancho */
+                    
+                @media screen and (max-width:1300px) {
+                        header{
+                            width:auto;
+                            height: 200px;
+                        }
+                        body{
+                            width:auto;
+                            height: 200px;
+                        }
+                    }
+                    
+                /* Adaptación de ancho fijo de resoluciones de 900 a 1300px de ancho */    
+                    
+                    @media all and (max-width:900px) and (max-width:1300px) {
+                            header{
+                                width:auto;
+                                height: 200px;
+                            }
+                            body{
+                                width:auto;
+                                height: 200px;
+                            }
+                    }
+        
+                /* Adaptación optimizada para verse en un iPad y iPhone en posición vertical */
+                    
+                    @media screen and (max-width:768px) and (max-width:640px) and (orientation: portrait){
+                            header{
+                                width:auto;
+                                height: 200px;
+                            }
+                            body{
+                                width:auto;
+                                height: 200px;
+                            }
                     }
 
-                @media screen and (min-width: 1300px) {
-                    #contenedor{
-                        width:100%;
-                        }
-                }
-
-                @media screen and (min-width: 900px) and (max-width: 1300px) {
-                    #contenedor{
-                        width:100%;
-                        }
-                }
-
-                @media screen and (max-device-width : 480px) and (orientation : landscape) {
-
-                    #sidebar{
-                            display:none;
+                /* Adaptación optimizada para verse en un iPad y iPhone en posición horizontal */
+                    @media screen and (max-width:1024px) and (max-width:1136px) and (orientation: landscape) {
+                            header{
+                                width: auto;
+                                height: 200px;
                             }
-
-                        #menu{
-                        text-align:center;
-                        }
-                }
-
-                @media screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
-                    .entry, .entry-content
-                    {
- 	                    font-size:1.2em;
-	                    line-height:1.5em;
-
-	                }
-                }
+                            
+                            body{
+                                width:auto;
+                                height:200px;
+                            }
+                    }                      
 
         </style>
 
     </head>
     <body>
         <main>
+
+        <!-- Configuro la cabecera principal -->    
             <header>
+                <!-- Introduzco imágenes y les doy estilo -->
                     <img src="img_HOME/logo.jpg" alt="logo">
                     <img style="border: 5px solid; color: rgb(202, 216, 8)" src="img_HOME/amanecer.jpg" width="600" height="100" />
             </br>
@@ -225,21 +264,23 @@
 
 
              </header>
+            <!-- Configuro la sección de la navegación -->
                 <nav>
                     <ul>
+                    <!-- Establezco los diferentes enlaces que nos dirigen a distintas páginas-->     
                       <li><a href="../01_HOME/HOME.html">HOME</a></li>
                       <li><a href="#">Noticias</a></li>
                       <li><a href="../Quienes_somos/Quienes_somos.html">Quiénes somos</a></li>
                       <li><a href="#">Publicaciones</a></li>
                       <li><a href="../AreasActuacion/Areas.html">Áreas de actuación</a></li>
                       <li><a href="#">Localización</a></li>
-                      <li><a href="../04_FORMULARIO/formulario.html">Contacto</a></li>
+                      <li><a href="../04_FORMULARIO/Formulario CSS.html">Contacto</a></li>
                     </ul>
                   </nav>
         
-    
+        <!-- Configuro la estructura section -->
             <section>
-    
+            <!-- Configuro la cabecera de la estructura section -->
                 <header style= "background-color: rgb(109, 157, 206)">
                     <h1>
                         AYÚDANOS A VACUNAR EN ÁFRICA
@@ -249,9 +290,12 @@
                     
                  </header>
     
+            <!-- Configuro la sección article -->
                 <article>
+                <!-- Imagen del artículo -->
                     <img style="border: 5px solid; color: rgb(7, 4, 24)" id="vacunaAfrica" src="img_HOME/Vacunacion.png" alt="Niño" width="800" height="400" title="Procedimiento de vacunación" />
         
+                <!-- Texto del artículo -->
                     <p>
                         El mundo se halla inmerso en la pandemia de COVID-19. La OMS y sus asociados trabajan juntos en la respuesta siguiendo el rastro de la pandemia,
                          ofreciendo asesoramiento sobre las intervenciones más importantes, distribuyendo suministros médicos esenciales a los más necesitados y se han 
@@ -260,8 +304,12 @@
                          Si el cuerpo se ve posteriormente expuesto a estos gérmenes patógenos, estará listo para destruirlos de inmediato, previniendo así la enfermedad.                    
                     </p>             
                 </article>
+            
+            <!--Configuro el footer de la estructura section -->
                 <footer>
                         <h2 style="color: blue;">Si usted viaja no deje de leer esta información</h2>   
+                    
+                <!-- Texto del artículo -->
                     <p>
                         Viajar es una actividad cada vez más integrada en la vida de todos nosotros. Sea cual sea la razón de nuestro viaje, debemos tomar ciertas medidas preventivas para preservar nuestra salud. Existen múltiples vacunas recomendadas para los viajeros, que serán indicadas según los diferentes destinos, así como la profilaxis para la malaria (medicación preventiva de la enfermedad), sin olvidar las recomendaciones generales (higiene de alimentos y bebidas, prevención de las picaduras de mosquito, botiquín, etc.) que se deben seguir para evitar la exposición a ciertas enfermedades.
 
@@ -273,11 +321,16 @@
                 </footer>
     
             </section>
-    
+            
+        <!-- Configuro la sección aside -->    
             <aside>
                 <div>
+                <!-- Imagen de la noticia -->
                     <img style="border: 5px solid; color: rgb(5, 1, 29)" id="voluntario" src="img_HOME/Voluntario.jpg" alt="voluntarioEjemplar">
+                    
+                <!-- Titular de la noticia -->    
                     <h3>De voluntario en África a las altas esferas de la Organización Mundial de la Salud</h2>
+                <!-- Artículo -->    
                     <p>
                         Un viaje a Ghana prendió la mecha, y el espíritu luchador de los activistas contra el VIH le acabó de inspirar.
                         Tras dos décadas dedicado a combatir el sida, Anil Soni ha sido nombrado CEO de la Fundación de la OMS.
@@ -285,9 +338,14 @@
                     </p>
                 </div>
                 <div>
-                        <img style="border: 5px solid; color: rgb(10, 5, 37)" id="covax" src="img_HOME/COVAX.jpeg" alt="vacunaAfrica">
+                <!-- Imagen de la noticia -->
+                    <img style="border: 5px solid; color: rgb(10, 5, 37)" id="covax" src="img_HOME/COVAX.jpeg" alt="vacunaAfrica">
+                    
+                <!-- Titular de la noticia -->
                     <h3>
                         Las vacunas contra la covid han llegado a 38 países de África                </h2>
+                
+                <!-- Artículo -->
                     <P>
                         Se han administrado casi siete millones de dosis, una cifra muy baja en comparación
                         con la población del continente, que asciende a unos 1.300 millones de personas
@@ -296,11 +354,14 @@
                 </div>
             </aside>
     
+            <!-- Configuro la sección footer -->
             <footer>
+                <!-- Introduzco los enlaces del footer -->
                 <p class="enlaces_pie">
-                    <a title="Ir al inicio" href="../01_HOME/HOME.html">Inicio</a> // <a title="contacto" href="#">Contacto</a> // <a title="Aviso legal" href="#">Aviso legal</a>
+                    <a style="color: rgb(39, 39, 209);" title="Ir al inicio" href="../01_HOME/HOME.html">Inicio</a> // <a style="color: rgb(39, 39, 209);" title="contacto" href="#">Contacto</a> // <a style="color: rgb(39, 39, 209);" title="Aviso legal" href="#">Aviso legal</a>
                 </p>
 
+                <!-- Link con ímágenes que enlazan con las redes sociales -->
                 <a href="#"><img id="facebook" src="img_HOME/facebook.png" alt="logoFacebook"></a>
                 <a href="#"><img id="twitter" src="img_HOME/twitter.png" alt="logoFacebook"></a>
                 <a href="#"><img id="instagram" src="img_HOME/instagram.png" alt="logoFacebook"></a>
