@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     
     <title>Formulario inscripción</title>
@@ -63,9 +64,89 @@ form{
     border-radius: 500px 500px 0px 0px;
 }
 
+        @media screen and (max-width:1300px) {
+            form{
+                width:auto;
+                height: 200px;
+            }
+            body{
+                width:auto;
+                height: 200px;
+            }
+        }
+
+        @media all and (max-width:900px) and (max-width:1300px) {
+            form{
+                width:auto;
+                height: 200px;
+            }
+            body{
+                width:auto;
+                height: 200px;
+            }
+        }
+
+        @media screen and (max-width:768px) and (max-width:640px) and (orientation: portrait){
+            form{
+                width:auto;
+                height: 200px;
+            }
+            body{
+                width:auto;
+                height: 200px;
+            }
+        }
+
+        @media screen and (max-width:1024px) and (max-width:1136px) and (orientation: landscape) {
+            form{
+                width: auto;
+                height: 200px;
+            }
+            body{
+                width:auto;
+                height:200px;
+            }
+        }
+      
+
+            
+                    nav ul{
+                        list-style: none;
+                        display: inline-block;
+                        padding-top: 0px;
+                        padding-bottom: 0px;
+                    }
+                    nav ul li{
+                        float: left;
+                        margin-top: 0px;
+                    }
+                
+                    nav ul li a {
+                        color:blue;
+                        font-weight: bold;
+                        text-decoration: none;
+                        font-size: 20px;
+                        padding: 18px;
+                    }
+                
+                    
+
 </style>
     
 </head>
+
+<nav>
+    <ul>
+      <li><a href="../01_HOME/HOME.html">HOME</a></li>
+      <li><a href="#">Noticias</a></li>
+      <li><a href="../Quienes_somos/Quienes_somos.html">Quiénes somos</a></li>
+      <li><a href="#">Publicaciones</a></li>
+      <li><a href="../AreasActuacion/Areas.html">Áreas de actuación</a></li>
+      <li><a href="#">Localización</a></li>
+      <li><a href="../04_FORMULARIO/Formulario CSS.html">Contacto</a></li>
+    </ul>
+  </nav>
+
 <body>
     <h1 style="color: rgb(8, 4, 252); text-align: center;">Formulario de inscripción ONG</h1>
     <form action="Formulario_ONG.jsp" method="get">
@@ -84,7 +165,7 @@ form{
             <br />
             <br/>
             <br/>
-        </i>
+            </i>
 
             <div class="datos_personales"><h2>Datos personales(*)</h2></div>
             <br/>
@@ -182,7 +263,7 @@ form{
             <br />
             <br/>
             <br/>
-        </div>
+            </div>
 
             <div class="donacion"><h2>Donación</h2></div>
 
@@ -250,4 +331,3 @@ form{
     </form>
 </body>
 </html>
-
