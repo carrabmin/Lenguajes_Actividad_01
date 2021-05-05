@@ -107,6 +107,7 @@
             height: auto;
             
         }
+
         
         h2 {
             padding-left: 10px;
@@ -130,8 +131,31 @@
           
         }
 
+        /*adaptación para ancho variablae de monitores de más de 1300 px de ancho*/
+        @media screen and (max-width:1300px) {
+            header{
+                width:auto;
+                height: 200px;
+            }
+            body{
+                width:auto;
+                height: 200px;
+            }
+        }
+
+        /*adaptación para ancho fijo de resoluciones de 900 a 1300px de ancho*/
+        @media all and (max-width:900px) and (max-width:1300px) {
+            header{
+                width:auto;
+                height: 200px;
+            }
+            body{
+                width:auto;
+                height: 200px;
+            }
+        }
         /*adaptación para iPad y iPhone 5, ambos en verttical*/
-        @media screen and (min-width:768px) and (min-width:640px) and (orientation: portrait){
+        @media screen and (max-width:768px) and (max-width:640px) and (orientation: portrait){
             header{
                 width:auto;
                 height: 200px;
@@ -143,7 +167,7 @@
         }
 
         /*adaptación para iPad y iPhone 5, ambos en horizontal*/
-        @media screen and (min-width:1024px) and (min-width:1136px) and (orientation: landscape) {
+        @media screen and (max-width:1024px) and (max-width:1136px) and (orientation: landscape) {
             header{
                 width: auto;
                 height: 200px;
@@ -183,7 +207,7 @@
                     <li><a href="imagenes/ApoyoInfancia.jpg" style="color: teal;">Proyecto de apoyo a la infacia y a lal educación</a></li>
                     <li><a href="imagenes/AyudaHumanitaria.jpg" style="color: rgb(18, 57, 184);">Ayuda humanitaria</a></li>
                     <li><a href="imagenes/VacunasInternacionales.jpg" style="color: rgb(98, 170, 39);">Vacunación internacional</a></li>
-                    <li><a href="imagenes/DerechosMujer.jpg" style="color: rgb(219, 4, 155);">Defensa de los derechos y la dignidad de la mujer</a></li>
+                    <li><a href="imagenes/mujer.jpg" style="color: rgb(219, 4, 155);">Defensa de los derechos y la dignidad de la mujer</a></li>
                     <li><a href="imagenes/ProteccionAmbiente.jpg" style="color: rgb(30, 243, 161);">Protección del medio ambiente</a></li>
                     <li><a href="imagenes/ComercioJusto.jpg" style="color: rgb(124, 5, 15);">Comercio justo</a></li>
                     
